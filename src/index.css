@@ -639,6 +639,37 @@ section {
   }
 }
 
+.hero-dots {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 10;
+}
+
+.hero-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.hero-dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.hero-dot.active {
+  background: var(--color-primary);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
+}
+
 /* Stats */
 .stats-section {
   padding: 48px 0;

@@ -4,20 +4,21 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
-    'images/image1.webp',
-    'images/image2.webp',
-    'images/image3.webp',
-    'images/imgae4.webp',
-    'images/imgae5.webp',
-    'images/image6.webp'
+    'images/cover.jpeg',
+    'images/image01.avif',
+    'images/image02.jpg',
+    'images/image03.jpg',
+    'images/image04.webp',
+    'images/image05.jpg',
+    'images/image06.jpg'
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(timer);
-  }, [slides.length]);
+  }, [slides.length, currentSlide]);
 
   return (
     <section id="home" className="hero">
@@ -33,7 +34,6 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       <div className="container hero-container">
         <div className="hero-content text-center">
-          <div className="hero-badge">Ghana Non-Profit Organization</div>
           <h1 className="hero-h1">Igniting Girls of Africa</h1>
           <p className="hero-sub">Empowering girls to rise as leaders — through mentorship, entrepreneurship, and the skills
             to create lasting change in their communities.</p>
@@ -46,6 +46,16 @@ const Hero = () => {
             <span className="hero-trust-item"> Girl-Led Impact</span>
           </div>
         </div>
+      </div>
+      <div className="hero-dots">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            className={`hero-dot ${index === currentSlide ? 'active' : ''}`}
+            onClick={() => setCurrentSlide(index)}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
       </div>
     </section>
   );
