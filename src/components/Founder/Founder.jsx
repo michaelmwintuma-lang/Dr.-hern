@@ -7,7 +7,7 @@ const Founder = () => {
         <div className="founder-grid">
           <div className="founder-image-wrapper">
             <img 
-              src="images/founder-placeholder.jpg" 
+              src="images/ceo.jpeg" 
               alt="CEO and Founder" 
               className="founder-img" 
               onError={(e) => {
