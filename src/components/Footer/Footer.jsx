@@ -70,29 +70,6 @@ const Footer = () => {
           <p>Designed with love for the girls of Africa.</p>
         </div>
       </div>
-      <div className="footer-logo-strip" aria-label="Igniting Girls of Africa logo strip">
-        <div className="footer-logo-marquee">
-          <div className="footer-logo-badge">
-            <img src="images/logo.jpg" alt="Igniting Girls of Africa logo" width="140" height="52" />
-          </div>
-          <div className="footer-logo-badge footer-logo-badge-muted" aria-hidden="true">
-            <img src="images/logo.jpg" alt="" width="140" height="52" />
-          </div>
-          <div className="footer-logo-badge footer-logo-badge-muted" aria-hidden="true">
-            <img src="images/logo.jpg" alt="" width="140" height="52" />
-          </div>
-          {/* Duplicated for seamless marquee */}
-          <div className="footer-logo-badge" aria-hidden="true">
-            <img src="images/logo.jpg" alt="" width="140" height="52" />
-          </div>
-          <div className="footer-logo-badge footer-logo-badge-muted" aria-hidden="true">
-            <img src="images/logo.jpg" alt="" width="140" height="52" />
-          </div>
-          <div className="footer-logo-badge footer-logo-badge-muted" aria-hidden="true">
-            <img src="images/logo.jpg" alt="" width="140" height="52" />
-          </div>
-        </div>
-      </div>
     </footer>
   );
 };
