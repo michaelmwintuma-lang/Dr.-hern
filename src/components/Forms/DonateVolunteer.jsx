@@ -41,13 +41,13 @@ const DonateVolunteer = () => {
 
     setStatus({ state: 'loading', message: 'Sending your application securely...' });
 
-    // Dynamic fields
+    // Dynamic fields (access_key, from_name, Form Type are already in hidden inputs)
     const formLabel = formType === 'sponsor' ? 'Sponsorship' : 'Volunteer';
-    formData.append('_subject', `[${formLabel} Form] New ${formLabel} Submission - ${formData.get('name')}`);
-    formData.append('_replyto', formData.get('email'));
+    formData.append('subject', `[${formLabel} Form] New ${formLabel} Submission - ${formData.get('name')}`);
+    formData.append('replyto', formData.get('email'));
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/gocto2020@gmail.com', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formData,
         headers: {
@@ -83,7 +83,7 @@ const DonateVolunteer = () => {
             <h2>Become a Sponsor</h2>
             <p>Support our mission by sponsoring a girl's education and development journey.</p>
             <form id="sponsor-form" onSubmit={(e) => handleFormSubmit(e, 'sponsor')} noValidate>
-              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="access_key" value={accessKey} />
               <input type="hidden" name="from_name" value="Igniting Girls of Africa Website Forms" />
               <input type="hidden" name="Form Type" value="Sponsorship" />
               <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
@@ -142,7 +142,7 @@ const DonateVolunteer = () => {
             <h2 id="volunteer">Become a Volunteer</h2>
             <p>Join our network of mentors, trainers, and community leaders.</p>
             <form id="volunteer-form" onSubmit={(e) => handleFormSubmit(e, 'volunteer')} noValidate>
-              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="access_key" value={accessKey} />
               <input type="hidden" name="from_name" value="Igniting Girls of Africa Website Forms" />
               <input type="hidden" name="Form Type" value="Volunteer" />
               <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
