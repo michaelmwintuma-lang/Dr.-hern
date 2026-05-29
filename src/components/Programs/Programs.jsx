@@ -67,6 +67,54 @@ const programData = [
       </svg>
     ),
     modalDesc: '<p style="margin-bottom:16px;">Safe, structured community workshops designed to build high self-esteem, emotional resilience, and a strong sense of identity in every girl we reach.</p><h4 style="margin-bottom:8px; color:var(--color-primary);">Program Details:</h4><ul style="list-style:disc; margin-left:20px; color:var(--color-text-mid); display:flex; flex-direction:column; gap:8px;"><li>Emotional intelligence workshops.</li><li>Peer-to-peer support groups.</li><li>Community outreach and advocacy.</li></ul>'
+  },
+  {
+    id: '6',
+    number: '06',
+    title: 'Business Development',
+    teaser: 'Empowering young women with the skills to scale businesses, build professional networks, and thrive in competitive markets.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+      </svg>
+    ),
+    modalDesc: '<p style="margin-bottom:16px;">Empowering young women with the skills to scale businesses, build professional networks, and thrive in competitive markets.</p><h4 style="margin-bottom:8px; color:var(--color-primary);">Program Details:</h4><ul style="list-style:disc; margin-left:20px; color:var(--color-text-mid); display:flex; flex-direction:column; gap:8px;"><li>Advanced business scaling strategies.</li><li>Professional networking and mentorship.</li><li>Access to resources for market expansion.</li></ul>'
+  },
+  {
+    id: '7',
+    number: '07',
+    title: 'Mental Well-Being',
+    teaser: 'Providing essential psychological support, stress management techniques, and safe spaces for emotional healing.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path>
+      </svg>
+    ),
+    modalDesc: '<p style="margin-bottom:16px;">Providing essential psychological support, stress management techniques, and safe spaces for emotional healing.</p><h4 style="margin-bottom:8px; color:var(--color-primary);">Program Details:</h4><ul style="list-style:disc; margin-left:20px; color:var(--color-text-mid); display:flex; flex-direction:column; gap:8px;"><li>Access to trained counselors and therapists.</li><li>Mindfulness and stress reduction workshops.</li><li>Peer support groups for mental health.</li></ul>'
+  },
+  {
+    id: '8',
+    number: '08',
+    title: 'Self Esteem Building',
+    teaser: 'Dedicated programs to help young women recognize their self-worth, overcome imposter syndrome, and set ambitious life goals.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+      </svg>
+    ),
+    modalDesc: '<p style="margin-bottom:16px;">Dedicated programs to help young women recognize their self-worth, overcome imposter syndrome, and set ambitious life goals.</p><h4 style="margin-bottom:8px; color:var(--color-primary);">Program Details:</h4><ul style="list-style:disc; margin-left:20px; color:var(--color-text-mid); display:flex; flex-direction:column; gap:8px;"><li>Self-discovery and identity workshops.</li><li>Strategies for overcoming self-doubt.</li><li>Goal-setting and vision board creation.</li></ul>'
+  },
+  {
+    id: '9',
+    number: '09',
+    title: 'Confidence building',
+    teaser: 'Equipping girls with the assertiveness, communication skills, and inner belief to take charge of their own narratives.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+      </svg>
+    ),
+    modalDesc: '<p style="margin-bottom:16px;">Equipping girls with the assertiveness, communication skills, and inner belief to take charge of their own narratives.</p><h4 style="margin-bottom:8px; color:var(--color-primary);">Program Details:</h4><ul style="list-style:disc; margin-left:20px; color:var(--color-text-mid); display:flex; flex-direction:column; gap:8px;"><li>Assertive communication training.</li><li>Body language and presentation skills.</li><li>Confidence through creative expression.</li></ul>'
   }
 ];
 
@@ -78,7 +126,7 @@ const Programs = () => {
       <div className="container">
         <div className="section-header">
           <h2>Our Structural Programs</h2>
-          <p>Five pillars designed to equip every girl with the tools, confidence, and networks to lead.</p>
+          <p>Core pillars designed to equip every girl with the tools, confidence, and networks to lead.</p>
         </div>
 
         <div className="programs-grid">

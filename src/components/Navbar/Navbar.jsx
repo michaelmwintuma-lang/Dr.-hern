@@ -90,6 +90,10 @@ const Navbar = () => {
                     <li><a href="#programs" onClick={(e) => smoothScrollTo(e, '#programs')}>Entrepreneurship</a></li>
                     <li><a href="#programs" onClick={(e) => smoothScrollTo(e, '#programs')}>Financial Literacy</a></li>
                     <li><a href="#programs" onClick={(e) => smoothScrollTo(e, '#programs')}>Confidence Building & Outreach</a></li>
+                    <li><a href="#programs" onClick={(e) => smoothScrollTo(e, '#programs')}>Business Development</a></li>
+                    <li><a href="#programs" onClick={(e) => smoothScrollTo(e, '#programs')}>Mental Well-Being</a></li>
+                    <li><a href="#programs" onClick={(e) => smoothScrollTo(e, '#programs')}>Self Esteem Building</a></li>
+                    <li><a href="#programs" onClick={(e) => smoothScrollTo(e, '#programs')}>Confidence building</a></li>
                   </ul>
                 </div>
 

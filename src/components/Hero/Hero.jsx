@@ -6,11 +6,12 @@ const Hero = () => {
   const slides = [
     'images/cover.jpeg',
     'images/image01.avif',
-    'images/image02.jpg',
+    'images/image02.webp',
     'images/image03.jpg',
     'images/image04.webp',
     'images/image05.jpg',
-    'images/image06.jpg'
+    'images/image06.jpg',
+    'images/image07.jpg'
   ];
 
   useEffect(() => {
@@ -27,7 +28,12 @@ const Hero = () => {
           <div 
             key={index}
             className={`hero-slide ${index === currentSlide ? 'active' : ''}`} 
-            style={{ backgroundImage: `url('${slide}')` }}
+            style={{ 
+              backgroundImage: `url('${slide}')`,
+              backgroundSize: index === 0 ? 'contain' : 'cover',
+              backgroundPosition: index === 0 ? 'center top' : 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
           />
         ))}
       </div>
@@ -42,7 +48,7 @@ const Hero = () => {
           </div>
           <div className="hero-trust justify-center">
             <span className="hero-trust-item"> Based in Ghana</span>
-            <span className="hero-trust-item"> 5 Core Programs</span>
+            <span className="hero-trust-item"> 9 Core Programs</span>
             <span className="hero-trust-item"> Girl-Led Impact</span>
           </div>
         </div>

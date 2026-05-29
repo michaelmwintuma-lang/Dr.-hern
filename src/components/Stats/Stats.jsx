@@ -50,7 +50,7 @@ const Stats = () => {
           <div className="stat-label">Girls Reached</div>
         </div>
         <div className="stat-item">
-          <CountUp target={5} />
+          <CountUp target={9} />
           <div className="stat-label">Core Programs</div>
         </div>
         <div className="stat-item">
